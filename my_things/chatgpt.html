@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="../src/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- navbar section  -->
+    <div>
+        <!-- 1 -->
+        <div class="flex pt-[10px] items-center-safe w-[100%] flex-wrap gap-2 md:flex-nowrap"> <!-- added for responsiveness -->
+            <img class="w-[200px] h-[70px] object-cover mr-[100px] max-sm:mr-4" src="../pics/logo.png" alt="logo"> <!-- added max-sm -->
+            <div class="flex items-center max-sm:w-full">
+              <input class="pl-[10px] border-[1px] border-black focus:outline-none rounded-[20px] w-[400px] h-[35px] max-sm:w-full" type="search" placeholder="Iphone 16 pro max" name="" id=""> <!-- added max-sm:w-full -->
+              <button class="relative left-[-23px]">
+                  <i class="fa-regular fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <button class="ml-[20px] max-sm:ml-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>cart</span>
+            </button>
+            <button class="ml-[20px] max-sm:ml-2">
+                <i class="fa-solid fa-user"></i>
+                <span>user</span>
+            </button>
+        </div>
+
+        <!-- 2 -->
+        <div class="flex flex-wrap w-full overflow-x-auto whitespace-nowrap max-sm:gap-2 mt-2"> <!-- added flex-wrap and overflow -->
+            <span class="relative left-[70px] pt-[2px] max-sm:left-2">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <select class="border-none bg-gray-100 rounded-2xl w-[200px] h-[28px] ml-[40px] mr-[40px] text-center max-sm:ml-2 max-sm:mr-2">
+                <option value="All Categories">All Categories</option>
+                <!-- options repeated -->
+            </select>
+            <a class="mr-[40px] text-red-500 no-underline hover:bg-gray-100 p-[4px] box-border hover:rounded-3xl max-sm:mr-2" href="#">Bundle deals</a>
+            <a class="mr-[40px]  p-[4px] box-border hover:rounded-3xl  no-underline hover:bg-gray-100 max-sm:mr-2" href="#">Weekly deals</a>
+            <a class="mr-[40px]  p-[4px] box-border hover:rounded-3xl  no-underline hover:bg-gray-100 max-sm:mr-2 " href="#">Top brands</a>
+            <a class="mr-[40px] no-underline hover:bg-gray-100 max-sm:mr-2  p-[4px] box-border hover:rounded-3xl " href="#">Choice</a>
+            <a class="mr-[40px] no-underline hover:bg-gray-100 max-sm:mr-2  p-[4px] box-border hover:rounded-3xl " href="#">Home & Gardens</a>
+            <a class="mr-[40px] no-underline hover:bg-gray-100 max-sm:mr-2  p-[4px] box-border hover:rounded-3xl " href="#">Hair Extension</a>
+            <select class="border-none w-[60px] h-[28px] text-center max-sm:mr-2  p-[4px] box-border act\:rounded-3xl ">
+                <option value="All Categories">More</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- backgroung image section startd girls dress -->
+    <div class="w-[100%] h-auto bg-[rgba(68,187,57,0.7)] text-white mt-[10px] p-4"> <!-- added p-4, h-auto -->
+        <h3 class="text-lg font-semibold ml-[60px] max-sm:ml-2">Sale Ends:May 19,11:58 (GMT+5)</h3>
+        <h1 class="text-2xl font-bold ml-[60px] max-sm:ml-2">UPTO 60 % OFF</h1>
+        <div class="flex flex-wrap items-center gap-4 mt-4 justify-center"> <!-- added flex-wrap and justify-center -->
+            <!-- boxes inside -->
+            <div class="h-[100px] w-[200px] gap-[5px] bg-purple-500 p-[3px] flex">
+              <img class="h-[94px] w-[100px] object-cover object-center" src="../pics/watch.jpg" alt="">
+              <p class="text-white self-center">Top deals <br> RS:10000 </p>
+            </div>
+            <div class="flex h-[100px] gap-[5px] w-[200px] bg-[rgba(255,225,93,0.3)] p-[3px]">
+              <img class="h-[94px] w-[100px] object-cover object-right" src="../pics/toy-car.jpg" alt="">
+              <p class="text-white self-center">Top deals  <br> RS:10000</p>
+            </div>
+            <div class="flex gap-[5px] h-[100px] w-[200px] bg-[#65a5d0] p-[3px]">
+              <img class="h-[94px] w-[100px] object-cover object-center" src="../pics/toy-phone.jpg" alt="">
+              <p class="text-white self-center">Top deals <br> RS:10000</p>
+            </div>
+        </div>
+    </div>  
+
+    <!-- today's deal -->
+    <div class="w-[100%]">
+        <h1 class="text-center text-3xl font-bold h-[50px] pt-[15px]">Today's Deal</h1>
+        <div class="flex flex-wrap gap-[20px] justify-center items-center"> <!-- changed to flex-wrap -->
+            <!-- card 1 -->
+            <div class="h-auto w-[90%] md:w-[30%] border-[1px] border-gray-300 text-center p-[10px]"> <!-- added md:w-[30%] -->
+                <!-- contents remain unchanged -->
+            </div>
+            <!-- card 2 -->
+            <div class="h-auto w-[90%] md:w-[30%] border-[1px] border-gray-300 text-center p-[10px]">
+                <!-- contents remain unchanged -->
+            </div>
+            <!-- card 3 -->
+            <div class="h-auto w-[90%] md:w-[30%] border-[1px] border-gray-300 text-center p-[10px]">
+                <!-- contents remain unchanged -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
